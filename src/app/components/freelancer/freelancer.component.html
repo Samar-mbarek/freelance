@@ -1,0 +1,55 @@
+<!-- liste des  administrateurs -->
+
+
+
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title ">Liste des Administrateurs</h4>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class=" text-primary">
+                      
+                        <th>
+                            Nom
+                        </th>
+                        <th>
+                            Prenom
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                       
+                        <th>
+                            Action
+                        </th>
+                    </thead>
+                    <tbody *ngFor = "let freelancer of freelancers">
+                        <tr>
+                       
+                            <td>
+                                {{freelancer.firstName}}
+                            </td>
+                            <td>
+                                {{freelancer.lastName}}
+                            </td>
+                            <td>
+                                {{freelancer.mail}}
+                            </td>
+                            
+                            <td>
+                                <button mat-raised-button type="submit"
+                                    class="btn btn-danger pull-left">Supprimer</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
